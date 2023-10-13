@@ -1,7 +1,7 @@
 const pastPapers = {
             course1: [
-                { name: "2021 Past Paper", link: "https://example.com/course1/2022_past_paper.pdf" },
-                { name: "2021 Past Paper", link: "https://example.com/course1/2021_past_paper.pdf" },
+                { name: "2022 Past Paper", link: "https://example.com/course1/2022_past_paper.pdf" },
+                { name: "2021 Past Paper", link: "2021_past_paper.pdf" },
                 { name: "2020 Past Paper", link: "https://example.com/course1/2020_past_paper.pdf" },
                 { name: "2019 Past Paper", link: "https://example.com/course1/2020_past_paper.pdf" }
             ],
