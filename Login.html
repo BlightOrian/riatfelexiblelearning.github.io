@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="login-form" >
+    <form id="login-form" onsubmit="POST">
+        <h1><b><u>Riat Flexible Learning system Login</u></b></h1>
+        <div class="content">
+            <div class="input-field">
+                <input type="text" id="Student-Name" placeholder="Student-Name" autocomplete="Student-Name">
+            </div>
+            <div class="input-field">
+                <input type="password" id="login-password" placeholder="Password" autocomplete="new-password">
+            </div>
+        </div>
+        <div class="action">
+            <button type="button" onclick="signIn()">Sign in</button>
+            <button type="button" onclick="toggleForms()">Register</button>
+        </div>
+    </form>
+
+    <form id="register-form" style="display: none;" onsubmit="POST">
+        <h1>Register</h1>
+        <div class="content">
+            <div class="input-field">
+                <input type="text" id="Fname" placeholder="First Name" autocomplete="nope">
+            </div>
+            <div class="input-field">
+                <input type="text" id="Mname" placeholder="Middle Name" autocomplete="nope">
+            </div>
+            <div class="input-field">
+                <input type="text" id="Lname" name="Last Name" placeholder="Last Name" autocomplete="nope">
+            </div>
+            <div class="input-field">
+                <input type="text" id="admission" placeholder="Admission Number" autocomplete="nope">
+            </div>
+            <div class="input-field">
+                <select>
+                    <option default>... Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <input type="password" id="register-password" placeholder="Password" autocomplete="new-password">
+            </div>
+        </div>
+        <div class="action">
+            <button type="submit" onclick="register()">Register</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+    function signIn() {
+        var fm = document.getElementById('login-form');
+        
+        // Perform sign-in logic here
+        // Example: Redirect to the main page
+        window.location.href = "index.html"; // Replace with your actual main page URL
+        var username = document.getElementById('Student-Name').value;
+        var password = document.getElementById('login-password').value;
+        var userDetails = {
+            usernameDetails: username,
+            passordDetails: password
+        };
+
+        console.log(userDetails);
+    }
+
+    function register() {
+        // Perform registration logic here
+        // Example: Show a confirmation message
+        alert("Registration successful! You can now sign in.");
+    }
+
+    // Toggle between login and register forms
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById("register-form");
+
+    function toggleForms() {
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

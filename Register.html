@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+<div class="Register-form">
+    <form id="Register-form" style="display: none;">
+        <h1>Register</h1>
+        <div class="content">
+            <div class="input-field">
+                <input type="name" id="register-Student-Name" placeholder="Student-Name" autocomplete="nope">
+            </div>
+            <div class="input-field">
+                <input type="number" id="register-Admission" placeholder="Admission-Number" autocomplete="Admission-Number">
+            </div>
+        </div>
+        <div class="action">
+            <button type="button" onclick="register()">Register</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+
+    function register() {
+        // Perform registration logic here
+        // Example: Show a confirmation message
+        alert("Registration successful! You can now sign in.");
+    }
+
+    // Toggle between login and register forms
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById("register-form");
+
+    function toggleForms() {
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+    }
+</script>
+</body>
+</html>
