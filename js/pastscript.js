@@ -1,15 +1,15 @@
 const pastPapers = {
             course1: [
-                { name: "2022 Past Paper", link: "https://example.com/course1/2022_past_paper.pdf" },
-                { name: "2021 Past Paper", link: "2021_past_paper.pdf" },
-                { name: "2020 Past Paper", link: "https://example.com/course1/2020_past_paper.pdf" },
-                { name: "2019 Past Paper", link: "https://example.com/course1/2020_past_paper.pdf" }
+                { name: "2022 Past Paper", link: "past/2022_past_paper.pdf" },
+                { name: "2021 Past Paper", link: "past/2021_past_paper.pdf" },
+                { name: "2020 Past Paper", link: "past/2020_past_paper.pdf" },
+                { name: "2019 Past Paper", link: "past/2020_past_paper.pdf" }
             ],
             course2: [
-                { name: "2022 Past Paper", link: "https://example.com/course2/2022_past_paper.pdf" },
-                { name: "2021 Past Paper", link: "https://example.com/course2/2021_past_paper.pdf" },
-                { name: "2020 Past Paper", link: "https://example.com/course2/2020_past_paper.pdf" },
-                { name: "2019 Past Paper", link: "https://example.com/course1/2020_past_paper.pdf" }
+                { name: "2022 Past Paper", link: "past/2022_past_paper.pdf" },
+                { name: "2021 Past Paper", link: "past/2021_past_paper.pdf" },
+                { name: "2020 Past Paper", link: "past/2020_past_paper.pdf" },
+                { name: "2019 Past Paper", link: "past/2020_past_paper.pdf" }
             ]
             // Add more courses and their respective past papers as needed
         };
